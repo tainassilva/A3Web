@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .hero {
+    background-image: url('IMAGENS/barbeiro.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 590px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }  
+  .hero-content {
+    color: #fff;
+    font-size: 26px;
+    text-align: center;
+   
+  }
+  
+  .btn {
+    display:inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration:dotted;
+    margin-top: 20px;
+    align-items:center;
+    justify-content:center;
+    font-size: 15px;
+  }
+  
+  .services {
+    text-align: center;
+    padding: 50px 0;
+  }
+  
+  .service-item {
+    display: inline-block;
+    vertical-align: top;
+    width: 33%;
+    padding: 0 20px;
+  }
+  .scroll-indicator {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 1;
+  }
+  
+  .scroll-indicator-arrow {
+    margin-top: 5px;
+  }
+  
+  .scroll-indicator-arrow img {
+    width: 24px;
+    height: 24px;
+  }
+  
