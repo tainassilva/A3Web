@@ -8,15 +8,16 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgba(0,0,0,.6);
-    padding: 15px;
+    padding: 65px;
     border-radius: 15px;
     color : white;
 }
 fieldset{
     border: 3px solid dodgerblue;
+    padding: 30px;
 }
 legend{
-    border: 1px solid dodgerblue;
+    border: 10px solid dodgerblue;
     padding: 10px;
     text-align: center;
     background-color: dodgerblue;
@@ -24,6 +25,8 @@ legend{
 }
 .inputBox{
     position:relative;
+    width: 100%;
+    height: 100%;
 }
 .inputUser{
     background: none;
@@ -33,7 +36,7 @@ legend{
     color: white;
     font-size: 15px;
     width: 100%;
-    letter-spacing: 2px;
+    letter-spacing: 5px;
 }
 .labelInput{
     position: absolute;

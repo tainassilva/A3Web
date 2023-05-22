@@ -1,20 +1,20 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background-image: linear-gradient(50deg, rgb(30, 30, 232),rgb(100, 244, 244));
+    background-color:  rgb(0, 146, 231);
 }
 div{
-    background-color: rgba(0,0,0,.9);
-    position: absolute;
-    top: 50%;
+    background-color: rgba(248, 242, 242, 0.959);
+    position:absolute;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 80px;
     border-radius: 15px;
-    color : white;
+    color : rgb(0, 0, 0);
 }
 input{
     padding: 15px;
-    border: none;
+    border-color: black;
     outline: none;
     font-size: 15px;
 }
@@ -24,7 +24,7 @@ button{
     padding: 15px;
     width: 100%;
     border-radius: 10px;
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 15px;
 }
 button:hover{
@@ -32,10 +32,30 @@ button:hover{
 }
 .message {
     margin: 15px 0 0;
-    color: #b2bec3;
+    color: #fafafa70;
     font-size: 14px;
   }
 .message a {
     color: #6c5ce7;
     text-decoration: none;
+  }
+  #menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 190%;
+    height: 30px;
+    background-color: #5063d1;
+  }
+  #menu ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+  #menu li{
+    margin-right: 10px ;
+  }
+  #menu a{
+    color:rgb(255, 255, 255)
   }
