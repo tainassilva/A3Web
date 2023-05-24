@@ -1,0 +1,69 @@
+package com.trabalho.a3.dtos;
+
+// Classe com validador de dados 
+import org.hibernate.validator.constraints.br.CPF;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.Size;
+
+public class Dto {
+		
+		@NotBlank
+		@Size(max = 11)
+		@CPF
+		private String cpf;
+		
+		@NotBlank
+		private String nome_completo;
+		
+		@NotBlank
+		private String email;
+		
+
+		@NotBlank
+		@Size(max = 11)
+		private String telefone;
+		
+		@NotBlank
+		private String senha;
+		
+		String getCpf() {
+			return cpf;
+		}
+
+		public void setCpf(String cpf) {
+			this.cpf = cpf;
+		}
+
+		public String getNomeCompleto() {
+			return nome_completo;
+		}
+
+		public void setNomeCompleto(String nomeCompleto) {
+			this.nome_completo = nomeCompleto;
+		}
+
+		public String getEmail() {
+			return email;
+		}
+
+		public void setEmail(String email) {
+			this.email = email;
+		}
+
+		public String getTelefone() {
+			return telefone;
+		}
+
+		public void setTelefone(String telefone) {
+			this.telefone = telefone;
+		}
+
+		public String getSenha() {
+			return senha;
+		}
+
+		public void setSenha(String senha) {
+			this.senha = senha;
+		}
+	}
+

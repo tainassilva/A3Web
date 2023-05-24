@@ -11,3 +11,10 @@
 1684928004676	Rename resource 'HomeController.java'
 1684930067200	Rename type 'Cliente'
 1684930092283	Rename type 'Model'
+1684935789947	Copy package
+1684935822926	Delete element
+1684936037067	Move 'controllers' to 'a3'
+1684936041916	Move 'dtos' to 'a3'
+1684936046168	Move 'model' to 'a3'
+1684936050200	Move 'repository' to 'a3'
+1684936058893	Move 'services' to 'a3'
