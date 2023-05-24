@@ -1,0 +1,15 @@
+package com.trabalho.a3.controllers;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+
+@Controller
+public class HomeController {
+	// Fazer o tratamento da home
+	@GetMapping("/")
+	public String index() {
+		return "Olá, mundo!";
+	}
+	// essa ação apos o / vai retornar a ação "olá, mundo!"
+	
+}

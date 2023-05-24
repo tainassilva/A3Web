@@ -1,0 +1,13 @@
+1684850638493	Rename package 'controllers'
+1684850664115	Rename package 'model'
+1684853228670	Delete element
+1684926330286	Rename package 'com.trabalho.a3.serviced'
+1684927089619	Rename package 'com.trabalho.a3.controllers'
+1684927136867	Rename package 'com.trabalho.a3.model'
+1684927152544	Rename package 'com.trabalho.a3.services'
+1684927165498	Rename package 'com.trabalho.a3.repository'
+1684927447092	Rename type 'Repository'
+1684927532865	Rename type 'EasyBeautyRepository'
+1684928004676	Rename resource 'HomeController.java'
+1684930067200	Rename type 'Cliente'
+1684930092283	Rename type 'Model'

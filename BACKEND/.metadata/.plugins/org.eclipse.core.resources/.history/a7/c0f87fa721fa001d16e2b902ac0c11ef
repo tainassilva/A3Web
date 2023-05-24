@@ -1,0 +1,5 @@
+package com.trabalho.a3.repository;
+
+public interface Repository {
+
+}
