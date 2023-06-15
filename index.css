@@ -30,11 +30,20 @@ nav ul li a {
   align-items: center;
   justify-content: center;
 }
-
-.hero-content {
-  color: #fff;
-  font-size: 26px;
+  .hero-content{
+    text-align: center;
+  }
+.hero-content h1{
+  color:rgb(255, 255, 255);
+  font-size: 54px;
   text-align: center;
+}
+.hero-content h2{
+  color:rgb(255, 255, 255);
+  font-variant:small-caps;
+  font-size: 39px;
+  text-align: center;
+  
 }
 
 .btn {
