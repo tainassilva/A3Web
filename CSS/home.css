@@ -1,0 +1,14 @@
+body {
+    background-image: url("IMAGENS/barbeiro.jpg");
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .conteudo {
+    text-align:right;
+    padding: 80px;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+  }

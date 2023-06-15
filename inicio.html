@@ -1,55 +1,76 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Barber 7</title>
+  <title>BARBER 7</title>
   <link rel="stylesheet" type="text/css" href="inicio.css">
 </head>
 <body>
     <div class="scroll-indicator">
         <div class="scroll-indicator-arrow">
-          <img src="IMAGENS/arrow.svg" alt="Seta de Rolagem">
+          <img src="IMAGENS/arrow.png" alt="Seta de Rolagem">
         </div>
         <div class="scroll-indicator-line"></div>
       </div>
-      
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#">Início</a></li>
-        <li><a href="#">Serviços</a></li>
-        <li><a href="#">Equipe</a></li>
-        <li><a href="#">Contato</a></li>
-      </ul>
-    </nav>
-  </header>
   
   <section class="hero">
     <div class="hero-content">
       <h1>Bem-vindo à Barber 7</h1>
       <p>Uma experiência de barbearia única e vintage</p>
-      <a href="#" class="btn">Agende agora</a>
+      <a href="login.html" class="btn">AGENDE AGORA</a>
+      
     </div>
   </section>
   
-  <section class="services">
+  <section class="servicos">
     <h2>Nossos Serviços</h2>
-    <div class="service-item">
-      <img src="serviço1.jpg" alt="Serviço 1">
+    <div class="servico-item">
       <h3>Corte de Cabelo</h3>
-      <p>Descrição do serviço de corte de cabelo.</p>
+      <h5>CORTE MASCULINO - R$90 </h5>
+       <p>Inclui lavagem e secagem.</p> 
+
+     <h5> CORTE + BARBA COM RITUAL - R$149</h5>
+      <p>Corte e Barba com Ritual de tratamento de pele, micro esfoliação e drenagem facial. Tolerância de 10min para o início do serviço.</p> 
     </div>
-    <div class="service-item">
-      <img src="serviço2.jpg" alt="Serviço 2">
+    <div class="servico-item">
       <h3>Barba</h3>
-      <p>Descrição do serviço de barba.</p>
+      <h5>BARBA TRADICIONAL - R$70</h5>
+        <p> Realizada com navalha e toalha quente. Tolerância de 10min para o início do serviço.</p>
+         
+        <h5>BARBA COM RITUAL - R$80</h5>
+        <p> Ritual de tratamento de pele com micro esfoliação e drenagem facial. Tolerância de 10min para o início do serviço.</p></p>
     </div>
-    <div class="service-item">
-      <img src="serviço3.jpg" alt="Serviço 3">
-      <h3>Corte de Cabelo e Barba</h3>
-      <p>Descrição do serviço de corte de cabelo e barba.</p>
-    </div>
-  </section>
-  
+    <br>
+    <section class="contato">
+      <br>
+      <div class="contato-content">
+        <div class="contato-form">
+          <h2>Fale Conosco</h2>
+          <form>
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">ENVIAR</button>
+          </form>
+        </div>
+        <div class="contato-endereco">
+          <h2>Atendimento</h2>
+          <p>Ter. a Sex. 12h às 21h</p>
+          <p>Sab. 10h às 18h</p>
+          <h2>Endereço</h2>
+          <p>Rua Cortinas, 1910</p>
+          <p>São Paulo - SP</p>
+          <h2>Telefone</h2>
+          <p>(11) 2567-7890</p>
+        </div>
+      </div>
+    </section>
+    
   <footer>
     <p>Barber 7 &copy; 2023. Todos os direitos reservados.</p>
   </footer>

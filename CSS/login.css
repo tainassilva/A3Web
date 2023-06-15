@@ -1,61 +1,61 @@
 body{
-    font-family: Arial, Helvetica, sans-serif;
-    background-color:  rgb(0, 146, 231);
+  background-color: #333;
 }
-div{
-    background-color: rgba(248, 242, 242, 0.959);
-    position:absolute;
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 80px;
-    border-radius: 15px;
-    color : rgb(0, 0, 0);
+.container {
+  margin: 0 auto;
+  padding: 45px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1.1);
 }
-input{
-    padding: 15px;
-    border-color: black;
-    outline: none;
-    font-size: 15px;
+
+
+h2,
+h1 {
+  text-align: center;
 }
-button{
-    background-color: rgba(0, 0, 255, 0.596);
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.btn {
+  display: block;
+    width: 101%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
     border: none;
-    padding: 15px;
-    width: 100%;
-    border-radius: 10px;
-    color: rgb(255, 255, 255);
-    font-size: 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align:center;
+  }
+
+.btn:hover {
+  background-color: #555;
 }
-button:hover{
-    background-color: rgb(69, 85, 201);
+
+p {
+  margin-top: 20px;
 }
-.message {
-    margin: 15px 0 0;
-    color: #fafafa70;
-    font-size: 14px;
-  }
-.message a {
-    color: #6c5ce7;
-    text-decoration: none;
-  }
-  #menu{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 190%;
-    height: 30px;
-    background-color: #5063d1;
-  }
-  #menu ul{
-    list-style: none;
-    display: flex;
-    align-items: center;
-    height: 100%;
-  }
-  #menu li{
-    margin-right: 10px ;
-  }
-  #menu a{
-    color:rgb(255, 255, 255)
-  }
+
+a {
+  color: #6c5ce7;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

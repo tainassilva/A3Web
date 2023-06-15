@@ -1,24 +1,27 @@
 <!DOCTYPE html>
 <html>
-    <head>
-    <title>Login</title>
-    <meta charset="UTF-8">
-    <meta name = "viewport" content = "width=device-width">
-    <link rel="stylesheet" href="css/login.css">
-    </head>
-
-    <!--Link para outras paginas do projeto, provisório-->
-    <p class="home"><a href="index.html">Home</a></p>
-
-    <body>
-        <div>
-            <h1>login</h1>
-            <input type="text" placeholder="Usuário"/>
-            <br> <br>
-            <input type="password" placeholder="Senha"/>
-            <br> <br>
-            <button>Entrar</button>
-            <p class="message">Não registrado? <a href="cadastro.html">Crie uma conta</a></p>
-          </div>
-    </body>
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <link rel="stylesheet" type="text/css" href="css/login.css">
+</head>
+<body>
+  <div class="container">
+    <h1>BARBER 7</h1>
+    <h2>Login</h2>
+    <form>
+      <div class="form-group">
+        <input type="text" id="username" name="username" placeholder="Nome de usuário ou e-mail" required>
+      </div>
+      
+      <div class="form-group">
+        <input type="password" id="password" name="password" placeholder="Senha" required>
+      </div>
+      
+      <a href="agenda.html" class="btn">Entrar</a>
+    </form>
+    
+    <p>Ainda não tem uma conta? <a href="cadastro.html">Cadastre-se</a></p>
+  </div>
+</body>
 </html>

@@ -1,13 +1,8 @@
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-  }
-  
-  header {
     background-color: #333;
     color: #fff;
-    padding: 10px;
   }
   
   nav ul {
@@ -27,7 +22,7 @@ body {
   }
   
   .hero {
-    background-image: url('IMAGENS/barbeiro.jpg');
+    background-image: url("IMAGENS/barbeiro.jpg");
     background-size: cover;
     background-position: center;
     height: 590px;
@@ -54,12 +49,14 @@ body {
     font-size: 15px;
   }
   
-  .services {
+  .servicos {
     text-align: center;
     padding: 50px 0;
+    background-color: #333;
+    
   }
   
-  .service-item {
+  .servico-item {
     display: inline-block;
     vertical-align: top;
     width: 33%;
@@ -83,5 +80,56 @@ body {
   .scroll-indicator-arrow img {
     width: 24px;
     height: 24px;
+    border-radius: 50%;
   }
+  .contato-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .contato-form {
+    flex: 1 1 300px;
+    margin-right: 20px;
+  }
+  
+  .contato-endereco {
+    flex: 1 1 300px;
+  }
+  .contato-form input,
+  .contato-form textarea{
+    width: 70%;
+    padding: 5px;
+  }
+  .contato-form textarea{
+    width: 70%;
+    padding:8px;
+}
+  .contato-form label,
+  .contato-form button {
+    display: block;
+    width: 100%;
+
+    
+  }
+  
+  .contato-form button {
+    margin-top: 9px;
+    width: 73%;
+   margin-left: 90px;
+   padding:20px;
+  }
+  
+  .contato-endereco h3 {
+    margin-top: 0;
+  }
+  
+  .contato-endereco p {
+    margin-bottom: 10px;
+  }
+ 
+ 
+  
+  
+  
   
