@@ -9,7 +9,7 @@
   <div class="container">
     <h1>BARBER 7</h1>
     <h2>Login</h2>
-    <form action="/login" method="post">
+    <form id="login-form" action="agenda.html" method="post"> 
       <div class="form-group">
         <input type="text" id="username" name="username" placeholder="Nome de usuário ou e-mail" required>
       </div>
@@ -18,10 +18,12 @@
         <input type="password" id="password" name="password" placeholder="Senha" required>
       </div>
       
-      <a href="agenda.html" class="btn">Entrar</a>
+      <button type="submit" class="btn">Entrar</button>
     </form>
     
     <p>Ainda não tem uma conta? <a href="cadastro.html">Cadastre-se</a></p>
   </div>
+  
+  <script src="backend/login.js"></script>
 </body>
 </html>

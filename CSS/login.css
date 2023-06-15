@@ -42,7 +42,7 @@ input[type="password"] {
 
 .btn {
   display: inline-block;
-  width: 283px;
+  width: 300px;
   padding: 8px;
   background-color: #074608;
   color: #f5f5f5;
@@ -51,7 +51,7 @@ input[type="password"] {
   cursor: pointer;
   text-align:center;
   text-decoration: none;
-  
+  border: 1px solid #ccc;
 }
 
 .btn:hover {
