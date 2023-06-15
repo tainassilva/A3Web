@@ -28,7 +28,7 @@ document.getElementById('cadastro-form').addEventListener('submit', function(eve
     })
     .then(function(data) {
         console.log(data);
-        window.location.href= '/agenda.html';
+        window.location.href= '/cadastro.html';
     })
     .catch(function(error) {
         console.log(error);
