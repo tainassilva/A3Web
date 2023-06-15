@@ -2,7 +2,6 @@ body {
   background-color:#333;
   justify-content: center;
   align-items: center;
-  height: 100vh;
 }
 
 .container {
@@ -42,17 +41,17 @@ input[type="password"] {
 }
 
 .btn {
-  display: block;
-  width: 94,5%;
+  display: inline-block;
+  width: 283px;
   padding: 8px;
-  background-color: #333;
-  color: #fff;
+  background-color: #074608;
+  color: #f5f5f5;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   text-align:center;
   text-decoration: none;
-  font-size: 18px;
+  
 }
 
 .btn:hover {
