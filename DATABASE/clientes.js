@@ -3,19 +3,17 @@ const sqlite3 = require('sqlite3').verbose();
 // Cria uma instância do banco de dados em memória
 const db = new sqlite3.Database('usuario.db');
 
+
+
 // Cria a tabela 'cliente'
-db.serialize(() => {
   db.run(`
-    CREATE TABLE cliente (
+    CREATE TABLE IF NOT EXISTS cliente (
       id INTEGER PRIMARY KEY AUTOINCREMENT,
-      nome TEXT,
-      email TEXT,
-      senha TEXT,
-      cpf TEXT,
-      celular TEXT
+      nome VARCHAR(100),
+      email VARCHAR(50),
+      senha VARCHAR(50),
+      cpf VARCHAR(11),
+      celular VARCHAR(11)
     )
   `);
-});
-
-// Fecha a conexão com o banco de dados
-db.close();
+  console.log("Tabela criada com sucesso");

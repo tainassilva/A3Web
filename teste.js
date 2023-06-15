@@ -1,17 +1,17 @@
-var express = require ('express');// receber e fazer o parse
-var http = require('http');
+var sqlite3 = require('sqlite3').verbose();
+var db = new sqlite3.Database('DATABASE/usuario.db');
 
-var app = express ();
-var server = http.createServer(app);
-
-// Se digitamos no navegador localhost:3333, faremos uma requisição GET
-app.get('/',function(req,res){
-	//Servidor manda a resposta da requisição de volta para o cliente
-	res.send("<h1>Você se conectou com sucesso</h1>");
+db.serialize(function() {
+  db.all('SELECT * FROM cliente', function(err, rows) {
+    if (err) {
+      console.error(err.message);
+      return;
+    }
+    console.log('Dados da tabela Usuário:');
+    rows.forEach(function(row) {
+      console.log(row);
+    });
+  });
 });
-// Esperando na porta 3333
-server.listen(3333,function(){
-	console.log("Server listen on port : 3333")
-});
 
-
+db.close();
