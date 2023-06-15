@@ -16,7 +16,7 @@ app.get('/', function(req, res) {
   res.sendFile(path.join(__dirname, 'cadastro.html'));
 });
 
-app.post('/login.html', function(req, res) {
+app.post('/add', function(req, res) {
   console.log(req.body);
   db.run(
     'INSERT INTO usuario (nome, email, senha, cpf, celular) VALUES (?, ?, ?, ?, ?)',
