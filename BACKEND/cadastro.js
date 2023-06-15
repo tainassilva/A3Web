@@ -19,9 +19,6 @@ const db = new sqlite3.Database(dbPath, (err) => {
   }
 });
 
-
-
-
 // Rota para cadastrar usuário
 app.post('/add', (req, res) => {
   const { name, email, password, cpf, phone } = req.body;
@@ -37,6 +34,27 @@ app.post('/add', (req, res) => {
     } else {
       console.log('Novo usuário adicionado com sucesso');
       res.redirect('/login.html');
+    }
+  });
+});
+
+// Rota para a verificação de login
+app.post('/login', (req, res) => {
+  const { username, password } = req.body;
+
+  const query = `
+    SELECT * FROM usuario WHERE email = ? AND senha = ?
+  `;
+
+  db.get(query, [username, password], (err, row) => {
+    if (err) {
+      console.error('Erro ao verificar as credenciais de login:', err.message);
+      res.status(500).send('Erro ao verificar as credenciais de login');
+    } else if (!row) {
+      res.status(401).send('Credenciais de login inválidas');
+    } else {
+      // Credenciais de login válidas
+      res.redirect('/agenda.html');
     }
   });
 });
