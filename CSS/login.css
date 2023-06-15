@@ -18,12 +18,12 @@ body {
 }
 
 h1 {
-  font-size: 28px;
+  font-size: 20px;
   margin-bottom: 20px;
 }
 
 h2 {
-  font-size: 20px;
+  font-size: 28px;
   margin-bottom: 10px;
 }
 
@@ -60,4 +60,12 @@ input[type="password"] {
 
 p {
   margin-top: 10px;
+}
+a {
+  color: #6c5ce7;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
