@@ -21,7 +21,7 @@ const db = new sqlite3.Database(dbPath, (err) => {
 
 // Rota para a página inicial
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'index.html'));
+  res.sendFile(path.join(__dirname, 'A3WEB/index.html'));
 });
 
 // Rota para cadastrar usuário
