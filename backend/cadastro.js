@@ -5,7 +5,7 @@ const bodyParser = require('body-parser');
 
 const app = express();
 const port = 3333;
-const dbPath = path.join(__dirname, './DATABASE/usuario.db');
+const dbPath = path.join(__dirname, 'DATABASE/usuario.db');
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
@@ -19,12 +19,19 @@ const db = new sqlite3.Database(dbPath, (err) => {
   }
 });
 
+// Configuração de arquivos estáticos
+app.use(express.static(path.join(__dirname, 'public')));
+
 // Rota para a página inicial
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'index.html'));
+  res.sendFile(path.join(__dirname, './index.html'));
 });
 
 // Rota para cadastrar usuário
+app.get('/add', (req, res) => {
+  res.sendFile(path.join(__dirname, './cadastro.html'));
+});
+
 app.post('/add', (req, res) => {
   const { name, email, password, cpf, phone } = req.body;
 
